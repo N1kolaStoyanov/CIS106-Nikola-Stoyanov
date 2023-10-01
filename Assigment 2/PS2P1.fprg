@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-01 04:13:25 PM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTAxOzAyOjQ2OjI3IFBNOzI5Mjg="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTAxOzA0OjEzOjI1IFBNOzI7MzAzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Qty" type="Real" array="False" size=""/>
+            <declare name="priceperunit" type="Real" array="False" size=""/>
+            <declare name="totalprice" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Quantity&quot;" newline="True"/>
+            <input variable="Qty"/>
+            <output expression="&quot;Enter Price Per Item&quot;" newline="True"/>
+            <input variable="priceperunit"/>
+            <assign variable="totalprice" expression="qty * priceperunit"/>
+            <output expression="&quot;The total price is $&quot; &amp;totalprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
