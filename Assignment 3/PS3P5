@@ -1,0 +1,10 @@
+#input
+radius = float(input("Enter the Radius of the circle "))
+pie = float(3.174)
+#processs
+area = pie * (radius * radius)
+perimeter = 2 * pie * radius
+
+#outputs
+print("The area is :", area)
+print("The perimeter is :", perimeter)
