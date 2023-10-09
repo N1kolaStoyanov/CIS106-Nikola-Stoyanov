@@ -1,0 +1,9 @@
+#inputs
+
+total = float(input("Enter the money from the job earned"))
+
+#process
+final = total / 3
+
+#output
+print( "Each one will recive" , final )
