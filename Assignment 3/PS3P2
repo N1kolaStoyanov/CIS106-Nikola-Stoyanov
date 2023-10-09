@@ -1,0 +1,12 @@
+#input phase
+
+lname = input("Enter Last Name")
+midterm = float(input("Enter midterm Score"))
+final = float(input("Enter final exam Score"))
+
+#process phase
+total = midterm + final 
+
+#output phase
+print ("Student: ", lname)
+print ("Total Points Earned", total)
