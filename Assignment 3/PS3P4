@@ -1,0 +1,17 @@
+#inputs
+make = input("Enter the Make of the Vehicle")
+model = input("Enter the Model of the Vehicle")
+MSRP = float(input("Enter the MSRP of the Vehicle"))
+discount = float(input("Enter Discount of the Vehicle"))
+
+#process
+discountpercent = 100 / (MSRP / discount)
+finalprice = MSRP - discount
+
+#output
+print("Model :", make)
+print("Make :", model)
+print("The price is :", MSRP)
+print("The discount of the car is :", discount)
+print("The percentage discount is :", discountpercent)
+print("The final price is :", finalprice)
