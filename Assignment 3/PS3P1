@@ -1,0 +1,11 @@
+#input phase
+symbol = input("Enter Stock Symbol")
+numberofshare = float(input("Enter Number of Shares Purchased"))
+costpershare = float(input("Enter The price per Share"))
+
+#process phase
+Total = numberofshare * costpershare
+
+#outputs pase 
+print("Stock Symbol:", symbol)
+print("Total Price is: $", Total)
