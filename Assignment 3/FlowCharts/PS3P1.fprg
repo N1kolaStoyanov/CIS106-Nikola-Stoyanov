@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-08 05:21:36 PM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTA4OzA1OjE1OjA3IFBNOzI5MzI="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTA4OzA1OjIxOjM2IFBNOzE7MzAzOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Symbol" type="String" array="False" size=""/>
+            <declare name="NumberOfShare" type="Integer" array="False" size=""/>
+            <declare name="CostPerShare" type="Integer" array="False" size=""/>
+            <declare name="MoneyInvested" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Stock Symbol&quot;" newline="True"/>
+            <input variable="Symbol"/>
+            <output expression="&quot;Enter Number of Shares Purchased&quot;" newline="True"/>
+            <input variable="NumberOfShare"/>
+            <output expression="&quot;Enter Price per Share&quot;" newline="True"/>
+            <input variable="CostPerShare"/>
+            <assign variable="MoneyInvested" expression="Numberofshare * CostPerShare"/>
+            <output expression="&quot; Money Invested in &quot; &amp;Symbol &amp;&quot; is $ &quot; &amp;Moneyinvested" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

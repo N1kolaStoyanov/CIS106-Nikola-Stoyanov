@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-08 06:00:37 PM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTA4OzA1OjI3OjUwIFBNOzI5MzM="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTA4OzA2OjAwOjM3IFBNOzE7MzAzOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="make" type="String" array="False" size=""/>
+            <declare name="model" type="String" array="False" size=""/>
+            <declare name="msrp" type="Real" array="False" size=""/>
+            <declare name="discount" type="Real" array="False" size=""/>
+            <declare name="discountpercent" type="Real" array="False" size=""/>
+            <declare name="finalprice" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the Make of the Vehicle&quot;" newline="True"/>
+            <input variable="make"/>
+            <output expression="&quot;Enter the Model of the Vehicle&quot;" newline="True"/>
+            <input variable="model"/>
+            <output expression="&quot;Enter the MSRP of the Vehicle&quot;" newline="True"/>
+            <input variable="msrp"/>
+            <output expression="&quot;Enter the Discount of the Vehicle&quot;" newline="True"/>
+            <input variable="discount"/>
+            <assign variable="discountpercent" expression="100/ (msrp / discount)"/>
+            <assign variable="finalprice" expression="msrp - discount"/>
+            <output expression="&quot;The MSRP for &quot; &amp;Make  &amp;model &amp;&quot; is $&quot; &amp;msrp &amp;&quot; , the discount is $&quot; &amp;discount &amp;&quot; , and the discount percantage is &quot; &amp; discountpercent &amp;&quot;%&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

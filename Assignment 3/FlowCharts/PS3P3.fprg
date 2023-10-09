@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-08 05:27:44 PM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTA4OzA1OjI0OjQ0IFBNOzI5MzM="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTA4OzA1OjI3OjQ0IFBNOzE7MzA0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="MoneyEarned" type="Real" array="False" size=""/>
+            <declare name="FinalMoney" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the money earned from the job&quot;" newline="True"/>
+            <input variable="MoneyEarned"/>
+            <assign variable="FinalMoney" expression="MoneyEarned / 3"/>
+            <output expression="&quot;Each one of you three will recive $&quot; &amp;FinalMoney" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

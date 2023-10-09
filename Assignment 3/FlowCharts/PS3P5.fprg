@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-08 06:07:53 PM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTA4OzA2OjAwOjQ3IFBNOzI5MzE="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTA4OzA2OjA3OjUzIFBNOzE7MzA0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius" type="Integer" array="False" size=""/>
+            <declare name="Area" type="Real" array="False" size=""/>
+            <declare name="perimeter" type="Real" array="False" size=""/>
+            <declare name="Pie" type="Real" array="False" size=""/>
+            <assign variable="pie" expression="3.174"/>
+            <output expression="&quot;Enter Radius&quot;" newline="True"/>
+            <input variable="radius"/>
+            <assign variable="Area" expression="pie * (radius* radius)"/>
+            <assign variable="Perimeter" expression="2 * pie * radius"/>
+            <output expression="&quot;The area of the circle is &quot; &amp;area &amp;&quot; and the permimeter is &quot; &amp;perimeter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
