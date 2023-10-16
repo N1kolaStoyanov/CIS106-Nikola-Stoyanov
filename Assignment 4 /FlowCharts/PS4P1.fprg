@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-15 08:45:50 PM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTE1OzA4OjM1OjMwIFBNOzI5MzE="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTE1OzA4OjQ1OjUwIFBNOzE7MzA0Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Score1" type="Integer" array="False" size=""/>
+            <declare name="Score2" type="Integer" array="False" size=""/>
+            <declare name="Score1weight" type="Real" array="False" size=""/>
+            <declare name="Score2weight" type="Real" array="False" size=""/>
+            <declare name="FinalScore" type="Real" array="False" size=""/>
+            <output expression="&quot;Please Input the Score of your 1st test which is worth 60%&quot;" newline="True"/>
+            <input variable="Score1"/>
+            <output expression="&quot;Please input the Score of your 2nd  test which is worth 40%&quot;" newline="True"/>
+            <input variable="Score2"/>
+            <assign variable="Score1weight" expression="Score1 * .60"/>
+            <assign variable="Score2weight" expression="Score2 * .40"/>
+            <assign variable="FinalScore" expression="Score1weight + Score2weight"/>
+            <output expression="&quot;The final score of your test is &quot; &amp;finalscore &amp;&quot; points&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

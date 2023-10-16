@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-15 08:52:15 PM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTE1OzA4OjQ1OjU1IFBNOzI5Mzk="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTE1OzA4OjUyOjE1IFBNOzE7MzA0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pps" type="Real" array="False" size=""/>
+            <declare name="csp" type="Real" array="False" size=""/>
+            <declare name="qt" type="Real" array="False" size=""/>
+            <declare name="final" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the Purchase Price per Share in $&quot;" newline="True"/>
+            <input variable="pps"/>
+            <output expression="&quot;Enter the Current Price per Share in $&quot;" newline="True"/>
+            <input variable="csp"/>
+            <output expression="&quot;Enter Amount of Shares Owned&quot;" newline="True"/>
+            <input variable="qt"/>
+            <assign variable="Final" expression="(csp - pps ) * qt"/>
+            <output expression="&quot;The Total PROFIT/LOSS is &quot; &amp;final &amp;&quot;$&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-15 09:11:04 PM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTE1OzA4OjUzOjQ5IFBNOzI5NDE="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTE1OzA5OjExOjA0IFBNOzI7MzAzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="total" type="Real" array="False" size=""/>
+            <declare name="FT" type="Real" array="False" size=""/>
+            <declare name="ET" type="Real" array="False" size=""/>
+            <declare name="TT" type="Real" array="False" size=""/>
+            <declare name="FTT" type="Real" array="False" size=""/>
+            <declare name="ETT" type="Real" array="False" size=""/>
+            <declare name="TTT" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the cost of the meal&quot;" newline="True"/>
+            <input variable="total"/>
+            <assign variable="FT" expression="total * .15"/>
+            <assign variable="ET" expression="total * .18"/>
+            <assign variable="TT" expression="total * .20"/>
+            <assign variable="FTT" expression="total + FT"/>
+            <assign variable="ETT" expression="total + ET"/>
+            <assign variable="TTT" expression="total + TT"/>
+            <output expression="&quot;Wtih 15% Tip : &quot; &amp;ToChar(13)&#13;&#10;&amp;&quot; Total :&quot;                 &amp;total &amp;&quot;$&quot; &amp;ToChar(13)&#13;&#10;&amp;&quot; Tip: &quot;                    &amp;FT &amp;&quot;$&quot; &amp;ToChar(13)&#13;&#10;&amp;&quot; Total with Tip: &quot;   &amp;FTT &amp;&quot;$&quot; &amp;ToChar(13)  &amp;ToChar(13)&#13;&#10;&#13;&#10;&#13;&#10;&amp;&quot;Wtih 18% Tip : &quot; &amp;ToChar(13)&#13;&#10;&amp;&quot; Total :&quot;                 &amp;total &amp;&quot;$&quot; &amp;ToChar(13)&#13;&#10;&amp;&quot; Tip: &quot;                    &amp;ET &amp;&quot;$&quot; &amp;ToChar(13)&#13;&#10;&amp;&quot; Total with Tip: &quot;   &amp;ETT &amp;&quot;$&quot; &amp;ToChar(13)  &amp;ToChar(13)&#13;&#10;&#13;&#10;&amp;&quot;Wtih 20% Tip : &quot; &amp;ToChar(13)&#13;&#10;&amp;&quot; Total :&quot;                 &amp;total &amp;&quot;$&quot; &amp;ToChar(13)&#13;&#10;&amp;&quot; Tip: &quot;                    &amp;TT &amp;&quot;$&quot; &amp;ToChar(13)&#13;&#10;&amp;&quot; Total with Tip: &quot;   &amp;TTT &amp;&quot;$&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-15 09:22:11 PM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTE1OzA5OjE3OjQwIFBNOzI5MzM="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTE1OzA5OjIyOjExIFBNOzE7MzAzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="FC" type="Integer" array="False" size=""/>
+            <declare name="PPU" type="Integer" array="False" size=""/>
+            <declare name="CPU" type="Integer" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Fixed Costs&quot;" newline="True"/>
+            <input variable="FC"/>
+            <output expression="&quot;Enter Price Per Unit&quot;" newline="True"/>
+            <input variable="PPU"/>
+            <output expression="&quot;Enter Cost Per Unit&quot;" newline="True"/>
+            <input variable="CPU"/>
+            <assign variable="total" expression="FC / (PPU - CPU)"/>
+            <output expression="&quot;The break even point is&quot; &amp;total &amp;&quot; units&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
