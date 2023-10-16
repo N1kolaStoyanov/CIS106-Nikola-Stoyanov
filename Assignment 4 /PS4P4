@@ -1,0 +1,9 @@
+#input 
+fname = input("Enter your first name")
+steps = float(input("Enter the numbers of steps"))
+
+#process
+calories = steps * .25
+
+#output
+print(fname, "you burned", calories, "calories")
