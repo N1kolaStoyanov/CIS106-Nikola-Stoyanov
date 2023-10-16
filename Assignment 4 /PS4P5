@@ -1,0 +1,10 @@
+#input
+FC = float(input("Enter Fixed Cost:"))
+PPU = float(input("Enter Price per Unit:"))
+CPU = float(input("Enter Cost Per Unit:"))
+
+#process
+total = FC / (PPU-CPU)
+
+#output
+print("The break even point is " ,total ,"units")
