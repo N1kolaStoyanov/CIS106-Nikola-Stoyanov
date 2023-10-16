@@ -1,0 +1,11 @@
+#input phase
+score1 = float(input("Enter Score of the First Test"))
+score2 = float(input("Enter Score of the Second Test"))
+
+#processing phase
+score1weight = score1 * .60
+score2weight = score2 * .40
+total = score2weight + score1weight
+
+#output phase
+print("The weighted average of the two tests is:", total)
