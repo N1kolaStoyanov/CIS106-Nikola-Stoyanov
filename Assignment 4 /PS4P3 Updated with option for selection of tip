@@ -1,0 +1,36 @@
+#input phase
+total = float(input("Enter cost of the bill : "))
+tipselect = float(input("enter tip percentage: "))
+
+#processing phase
+tip15 = total * 0.15
+tip18 = total * 0.18
+tip20 = total * 0.20
+TTP15 = total + tip15
+TTP18 = total + tip18
+TTP20 = total + tip20
+tippercent = tipselect / 100
+tipS = total * tippercent
+TTPS = total + tipS
+
+#output phase
+print()
+print ("With 15% Tip:" )
+print ("the total is $" ,total )
+print ("The tip is $" ,tip15)
+print ("The total with tip is $" ,TTP15)
+print()
+print ("With 18% Tip: " )
+print ("the total is $" ,total )
+print ("The tip is $" ,tip18)
+print ("The total with tip is $" ,TTP18)
+print()
+print ("With 20% Tip:" )
+print ("The total is $" ,total)
+print ("The tip is $" ,tip20)
+print ("The total with tip is $" ,TTP20)
+print()
+print("With" ,tipselect ,"% Tip :")
+print("the total is $" ,total)
+print("The tip is $" ,tipS)
+print("The total with tip is $", TTPS)
