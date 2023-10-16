@@ -1,0 +1,10 @@
+#innput phase
+pps = float(input("Enter the Purchase Price per Share in $"))
+cps = float(input("Enter the Current Price per share in $"))
+qt = float(input("Enter the Quantity of Shares"))
+
+#processing phase
+final = qt * (cps - pps)
+
+#output phase
+print("The Profit Or Loss is:", final)
