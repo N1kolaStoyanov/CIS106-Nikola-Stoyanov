@@ -1,0 +1,46 @@
+name = input("Plese Enter your last name: ")
+D = float(input("Enter Number of Dependents"))
+GI = float(input("Enter Gross Income: "))
+
+AGI = GI - (D*12000)
+
+if AGI >50000 :
+  tax =.20
+  IT = AGI * tax
+  print()
+  print("Last name is: " ,name)
+  print()
+  print("Gross Income is : $" ,GI)
+  print()
+  print("Number Of Dependents : " ,D)
+  print()
+  print("Adjusted Gross Income is : $",AGI)
+  print()
+  print("Income tax is : $" ,IT)
+  
+else : 
+  tax2 = .10
+  IT2 = AGI * tax2
+  if IT2 < 0 :
+    print()
+    print("Last name is: " ,name)
+    print()
+    print("Gross Income is : $" ,GI)
+    print()
+    print("Number Of Dependents : " ,D)
+    print()
+    print("Adjusted Gross Income is : $",AGI)
+    print()
+    print("Income tax is : $100" )
+  else : 
+    IT = AGI * tax2
+    print()
+    print("Last name is: " ,name)
+    print()
+    print("Gross Income is : $" ,GI)
+    print()
+    print("Number Of Dependents : " ,D)
+    print()
+    print("Adjusted Gross Income is : $",AGI)
+    print()
+    print("Income tax is : $" ,IT)
