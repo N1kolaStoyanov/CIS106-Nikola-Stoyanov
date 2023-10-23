@@ -1,0 +1,22 @@
+#inputs
+item = input("Input Item A or B:") 
+number = float(input("Please input the Quantity of items"))
+
+
+
+#process
+if item == "A" : 
+  finalprice10 = 10 * number 
+  print("The item is A")
+  print()
+  print("The price per item is $10")
+  print()
+  print("The final price is" ,finalprice10)
+
+else : 
+  finalprice20 = 20 * number
+  print("The item is b")
+  print()
+  print("The price per item is $20")
+  print()
+  print("The final price is" ,finalprice20)
