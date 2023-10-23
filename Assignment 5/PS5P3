@@ -1,1 +1,17 @@
+#input
+number = float(input("Please Enter the Quantity of books "))
+cost = float(input("Please Enter the Cost of books "))
 
+#process
+total = cost * number
+
+if total >= 50 :
+  print("The total price is $" ,total )
+  print()
+  print("The shipping is $0")
+
+else :
+  shipfinal = total + 25
+  print("The total is $" ,shipfinal )
+  print()
+  print("The shipping is $25" )
