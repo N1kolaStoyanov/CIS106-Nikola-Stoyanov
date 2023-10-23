@@ -1,0 +1,35 @@
+#inputs 
+NofT = float(input("Enter the Quantity of items"))
+tax = 0.07
+
+#process 
+if NofT >= 1000:
+  unitprice3 = 3
+  price3 = NofT * unitprice3
+  tax3 = price3 * tax 
+  final3 = price3 + tax3 
+  print("The Quanitity is " , NofT)
+  print()
+  print(" The Unit price is $" ,unitprice3)
+  print()
+  print("The Extended price is $" ,price3)
+  print()
+  print("The tax is 7%")
+  print()
+  print("The final price is $" ,final3)
+  
+
+elif NofT < 1000: 
+  unitprice5 = 5
+  price5 = NofT * unitprice5
+  tax5 = price5 * tax 
+  final5 = price5 + tax5
+  print("The Quanitity is " , NofT)
+  print()
+  print(" The Unit price is $" ,unitprice5)
+  print()
+  print("The Extended price is $" ,price5)
+  print()
+  print("The tax is 7%")
+  print()
+  print("The final price is $" ,final5) 
