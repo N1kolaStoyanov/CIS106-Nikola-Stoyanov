@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-23 12:34:11 AM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTIzOzEyOjE3OjQ0IEFNOzI5MTU="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTIzOzEyOjM0OjExIEFNOzE7MzAxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="D" type="Integer" array="False" size=""/>
+            <declare name="GI" type="Real" array="False" size=""/>
+            <declare name="AGI" type="Real" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <declare name="IT" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter last name&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Please enter number of Dependents&quot;" newline="True"/>
+            <input variable="D"/>
+            <output expression="&quot;Please Enter your Gross Income&quot;" newline="True"/>
+            <input variable="GI"/>
+            <assign variable="AGI" expression="Gi - (D * 12000)"/>
+            <if expression="AGI &gt; 50000">
+                <then>
+                    <assign variable="tax" expression=".20"/>
+                    <assign variable="IT" expression="AGI * tax"/>
+                    <output expression="&quot;Last Name Is &quot; &amp;name  &amp;ToChar(13)&#13;&#10;&amp;&quot;Gross Income is $&quot; &amp;GI  &amp;ToChar(13)&#13;&#10;&amp;&quot;Number of Dependents is &quot; &amp;D  &amp;ToChar(13)&#13;&#10;&amp;&quot;Adjusted Gross Income is $&quot; &amp;AGI  &amp;ToChar(13)&#13;&#10;&amp;&quot;Income tax is $&quot; &amp;IT" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="tax" expression=".10"/>
+                    <assign variable="IT" expression="AGI * tax"/>
+                    <if expression="IT &lt; 0">
+                        <then>
+                            <declare name="incometax" type="Real" array="False" size=""/>
+                            <assign variable="incometax" expression="100"/>
+                            <output expression="&quot;Last Name Is &quot; &amp;name  &amp;ToChar(13)&#13;&#10;&amp;&quot;Gross Income is $&quot; &amp;GI  &amp;ToChar(13)&#13;&#10;&amp;&quot;Number of Dependents is &quot; &amp;D  &amp;ToChar(13)&#13;&#10;&amp;&quot;Adjusted Gross Income is $&quot; &amp;AGI  &amp;ToChar(13)&#13;&#10;&amp;&quot;Income tax is $&quot; &amp;incometax" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Last Name Is &quot; &amp;name  &amp;ToChar(13)&#13;&#10;&amp;&quot;Gross Income is $&quot; &amp;GI  &amp;ToChar(13)&#13;&#10;&amp;&quot;Number of Dependents is &quot; &amp;D  &amp;ToChar(13)&#13;&#10;&amp;&quot;Adjusted Gross Income is $&quot; &amp;AGI  &amp;ToChar(13)&#13;&#10;&amp;&quot;Income tax is $&quot; &amp;IT" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-23 12:17:35 AM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTIzOzEyOjExOjEwIEFNOzI5MDI="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTIzOzEyOjE3OjM1IEFNOzE7MzAyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Name" type="String" array="False" size=""/>
+            <declare name="Cost" type="Integer" array="False" size=""/>
+            <declare name="Warranty10" type="Real" array="False" size=""/>
+            <declare name="Warranty5" type="Real" array="False" size=""/>
+            <declare name="Total10" type="Real" array="False" size=""/>
+            <declare name="total5" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the Name of the Applience&quot;" newline="True"/>
+            <input variable="Name"/>
+            <output expression="&quot;Enter the Cost of the Applience&quot;" newline="True"/>
+            <input variable="Cost"/>
+            <if expression="Cost &gt; 1000">
+                <then>
+                    <assign variable="Warranty10" expression="Cost * .10"/>
+                    <assign variable="total10" expression="Cost + Warranty10"/>
+                    <output expression="&quot;The cost of &quot; &amp;name &amp;&quot; is $&quot; &amp;cost &amp;&quot;, the warranty cost is $&quot; &amp;warranty10 &amp;&quot; and the total cost is $&quot; &amp;total10" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="Warranty5" expression="Cost * .05"/>
+                    <assign variable="total5" expression="Cost + Warranty5"/>
+                    <output expression="&quot;The cost of &quot; &amp;name &amp;&quot; is $&quot; &amp;cost &amp;&quot;, the warranty cost is $&quot; &amp;warranty5 &amp;&quot; and the total cost is $&quot; &amp;total5" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

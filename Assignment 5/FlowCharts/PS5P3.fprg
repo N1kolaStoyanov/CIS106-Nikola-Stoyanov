@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-23 12:11:02 AM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTIzOzEyOjAxOjA0IEFNOzI5MDQ="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTIzOzEyOjExOjAyIEFNOzE7MzAxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Number" type="Integer" array="False" size=""/>
+            <declare name="Cost" type="Real" array="False" size=""/>
+            <declare name="Shipping" type="Real" array="False" size=""/>
+            <declare name="FinalPrice" type="Real" array="False" size=""/>
+            <declare name="Shippingfinal" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter the Quantity of books&quot;" newline="True"/>
+            <input variable="number"/>
+            <output expression="&quot;Please enter the cost per book&quot;" newline="True"/>
+            <input variable="Cost"/>
+            <assign variable="FinalPrice" expression="Cost * number"/>
+            <if expression="FinalPrice &gt;= 50">
+                <then>
+                    <output expression="&quot;The total is $&quot; &amp;FinalPrice &amp;&quot; and the Shipping is $0 &quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="Shippingfinal" expression="FinalPrice + 25"/>
+                    <output expression="&quot;The total price is $&quot; &amp;Shippingfinal &amp;&quot; the shipping cost is $25 &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-22 10:47:06 PM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTIyOzEwOjI4OjAwIFBNOzI5MjE="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTEwLTIyOzEwOjQ3OjA2IFBNOzE7MzAzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NofT" type="Real" array="False" size=""/>
+            <declare name="unitprice3" type="Integer" array="False" size=""/>
+            <declare name="unitprice5" type="Integer" array="False" size=""/>
+            <declare name="price3" type="Real" array="False" size=""/>
+            <declare name="price5" type="Real" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <declare name="tax3" type="Real" array="False" size=""/>
+            <declare name="tax5" type="Real" array="False" size=""/>
+            <declare name="final3" type="Real" array="False" size=""/>
+            <declare name="final5" type="Real" array="False" size=""/>
+            <assign variable="tax" expression="0.07"/>
+            <output expression="&quot;Please Enter Quanity of item&quot;" newline="True"/>
+            <input variable="NofT"/>
+            <if expression="NofT  &gt;= 1000">
+                <then>
+                    <assign variable="unitprice3" expression="3"/>
+                    <assign variable="price3" expression="NofT * unitprice3"/>
+                    <assign variable="tax3" expression="price3 * tax"/>
+                    <assign variable="final3" expression="price3 + tax3"/>
+                    <output expression="&quot;The Quanity is &quot; &amp;NofT &amp;&quot;,  the unit price is $&quot; &amp;unitprice3  &amp;&quot;,  the extended price is $&quot; &amp;price3 &amp;&quot;, the tax is 7% and the final price is $&quot; &amp;final3" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="unitprice5" expression="5"/>
+                    <assign variable="price5" expression="NofT * unitprice5"/>
+                    <assign variable="tax5" expression="price5  * tax"/>
+                    <assign variable="final5" expression="price5 + tax5"/>
+                    <output expression="&quot;The Quanity is &quot; &amp;NofT &amp;&quot;,  the unit price is $&quot; &amp;unitprice5  &amp;&quot;,  the extended price is $&quot; &amp;price5 &amp;&quot;, the tax is 7% and the final price is $&quot; &amp;final5" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
