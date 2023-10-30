@@ -1,0 +1,17 @@
+principle = int(input("Enter the principle amount"))
+years = int(input("Enter Amount of years"))
+
+if years == 5 and principle > 100000 :
+  IR = 6
+elif years == 5 and principle < 100000 :
+  IR = 4
+elif years == 10 and principle >= 50000 and principle <= 100000 :
+  IR = 5
+else :
+  IR = 2
+
+total = principle * (IR / 100)
+
+print ("The principle is $" , principle)
+print ("The interest rate is %" ,IR)
+print ("The interest amount for the first year is $" ,total)
