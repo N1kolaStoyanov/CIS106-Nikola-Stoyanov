@@ -1,0 +1,14 @@
+qty = float(input("Enter quantity of tickets")) 
+
+if qty >= 25 :
+  price = 50.00
+elif qty >= 10 :
+  price = 60.00
+elif qty >= 5 :
+  price = 70.00
+else :
+  price = 75.00
+
+total = price * qty
+print("The price per ticket is $" ,price)
+print("The total price is $" ,total)
