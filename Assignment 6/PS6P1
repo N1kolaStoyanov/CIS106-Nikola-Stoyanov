@@ -1,0 +1,25 @@
+qty = int(input("Enter quantity: "))
+
+if qty > 10000:
+  price = 10
+  ext = qty * price 
+  ettax = ext * 0.07 + ext
+  print("The extedned price is"  ,ext  )
+  print ("The tax is 7%"  )
+  print ("The total is $" ,ettax  )
+
+elif qty > 5000:
+  price = 20
+  ext = qty * price 
+  ettax = ext * 0.07 + ext
+  print("The extedned price is"  ,ext  )
+  print ("The tax is 7%"  )
+  print ("The total is $" ,ettax  )
+  
+else: 
+  price = 30
+  ext = qty * price 
+  ettax = ext * 0.07 + ext
+  print("The extedned price is"  ,ext  )
+  print ("The tax is 7%"  )
+  print ("The total is $" ,ettax  )
