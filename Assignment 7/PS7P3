@@ -1,0 +1,19 @@
+#input
+count1 = 0
+response = input("Enter Yes or No to continue")
+
+#processing
+while response == "Yes":
+  count1 = count1 + 1
+  lname = input("Enter last name")
+  fscore = int(input("Enter First score"))
+  sscore = int(input("Enter Secound score"))
+  avg = (fscore + sscore) * 0.5
+  print(f"{lname}'s average is {avg}")
+  response = input("Enter Yes or No to compute avarage again")
+
+#ifs
+if count1 >= 1 :
+  print(f"Amount of studends who enterned data is  {count1} " )
+else :
+  print("No students have entered data") 
