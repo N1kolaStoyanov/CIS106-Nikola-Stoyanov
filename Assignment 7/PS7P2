@@ -1,0 +1,9 @@
+#input stage
+start = int(input("Enter A Start Value"))
+stop = int(input("Enter End Value"))
+incr = int(input("Enter Increment Value"))
+
+#processing stage
+while start <= stop: 
+  print(start)
+  start = start + incr
