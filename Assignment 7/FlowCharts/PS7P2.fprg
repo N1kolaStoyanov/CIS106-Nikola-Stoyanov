@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-05 01:39:53 PM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTExLTA1OzAxOjM0OjQ5IFBNOzI5MzM="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTExLTA1OzAxOjM5OjUzIFBNOzE7MzA0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="start" type="Integer" array="False" size=""/>
+            <declare name="stop" type="Integer" array="False" size=""/>
+            <declare name="incr" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the Start Value&quot;" newline="True"/>
+            <input variable="start"/>
+            <output expression="&quot;Enter the Stop Value&quot;" newline="True"/>
+            <input variable="stop"/>
+            <output expression="&quot;Enter the Increment Value&quot;" newline="True"/>
+            <input variable="incr"/>
+            <while expression="Start &lt;= Stop">
+                <output expression="start" newline="True"/>
+                <assign variable="start" expression="start + incr"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

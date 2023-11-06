@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nikola"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-05 08:00:33 PM"/>
+        <attribute name="created" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTExLTA1OzAzOjM3OjQ1IFBNOzI5MzQ="/>
+        <attribute name="edited" value="Tmlrb2xhO0RFU0tUT1AtUUpPMTVIOTsyMDIzLTExLTA1OzA4OjAwOjMzIFBNOzI7MzAzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="lname" type="String" array="False" size=""/>
+            <declare name="fscore" type="Real" array="False" size=""/>
+            <declare name="sscore" type="Real" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <declare name="count" type="Real" array="False" size=""/>
+            <declare name="count1" type="Real" array="False" size=""/>
+            <assign variable="count1" expression="0"/>
+            <output expression="&quot;Enter Yes or No to continue&quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response ==&quot;Yes&quot;">
+                <output expression="&quot;Enter last name&quot;" newline="True"/>
+                <input variable="lname"/>
+                <output expression="&quot;Enter First test score&quot;" newline="True"/>
+                <input variable="fscore"/>
+                <output expression="&quot;Enter Second test Score&quot;" newline="True"/>
+                <input variable="sscore"/>
+                <assign variable="avg" expression="( fscore + sscore )  *0.5"/>
+                <output expression="lname &amp;&quot; ' score is &quot; &amp;avg" newline="True"/>
+                <output expression="&quot;Enter Yes or No to calculate a students grade again&quot;" newline="True"/>
+                <input variable="response"/>
+                <assign variable="count1" expression="count1 + 1"/>
+            </while>
+            <if expression="Count1 &gt;= 1">
+                <then>
+                    <output expression="&quot;The number of students who entered data are &quot; &amp;count1" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;No students have entered data&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
