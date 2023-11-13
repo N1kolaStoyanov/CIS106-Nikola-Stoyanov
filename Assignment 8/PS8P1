@@ -1,0 +1,9 @@
+principle = float(input("Enter Priciple Amount"))
+rate = float(input("Enter Rate of Interest"))
+for count in range(1,6, 1):
+  
+  ar = principle * rate
+  eb = principle + ar 
+   
+  print("Year", count, "Balance", principle , "Amount", eb)
+  principle = eb
