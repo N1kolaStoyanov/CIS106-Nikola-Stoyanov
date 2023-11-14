@@ -1,5 +1,5 @@
 f = open("dat.txt", "r")
-
+tbonusf = 0
 name = f.readline()
 
 while name != "":
@@ -18,5 +18,7 @@ while name != "":
   bonus_list = []
   bonus_list.append(bonusf)
   total_bonus = sum(bonus_list)
-  print("Total bonus is $" ,total_bonus)
+  print("Bonus soo far is $" ,total_bonus)
+  tbonusf = tbonusf + bonusf
+  print("Total bonus is $" ,tbonusf)
   name = f.readline()
