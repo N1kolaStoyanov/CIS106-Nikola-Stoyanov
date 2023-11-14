@@ -1,0 +1,6 @@
+Adams
+50000
+Baker
+75000
+Smith
+45000
